@@ -1,4 +1,20 @@
-build job: 'SampleMavenProject2', quietPeriod: 1
-checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'SampleProject2CheckstyleJob', unHealthy: ''
-mail bcc: '', body: 'automation scripts ran successfully', cc: '', from: '', replyTo: '', subject: 'Build got deployed successfully', to: 'doaa.saty@itworx.com'
-writeFile file: 'https://github.com/DoaaSaty/SampleMavenProject/blob/master/NewTextFile.txt', text: 'this file script is writing from jenkins pipeline file'
+pipeline {
+    agent any
+
+    stages {
+        stage('Initialize') {
+			steps {
+		 sh ...
+		 echo "PATH = ${PATH}"
+		 echo "M2_HOME = ${M2_HOME}"
+		 ...
+		 }
+	}
+		stage('Initialize') {
+			steps {
+				echo 'Hello World'
+				}
+			}
+		}
+	}
+		 
